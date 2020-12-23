@@ -71,7 +71,6 @@ const SetSizeArea = (props) => {
    
    useEffect(() => {
       setIndex(props.sizes.length)
-      console.log(props.sizes, props.sizes.length)
    }, [props.sizes.length])
 
    return (
