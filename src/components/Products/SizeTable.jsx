@@ -32,7 +32,7 @@ const SizeTable = (props) => {
                            {size.size}
                         </TableCell>
                         <TableCell>
-                           残り{size.quattity}点
+                           残り{size.quantity}点
                         </TableCell>
                         <TableCell className={classes.iconCell}>
                            {size.length > 0 ? (
