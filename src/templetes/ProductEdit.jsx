@@ -50,7 +50,6 @@ const ProductEdit = () => {
       if (id !== '') {
          db.collection('products').doc(id).get().then(snapshot => {
             const data = snapshot.data();
-            console.log(data)
             setImages(data.images)
             setName(data.name)
             setDescription(data.description)
@@ -61,10 +60,6 @@ const ProductEdit = () => {
          })
       }
    }, [id])
-
-   useEffect(() => {
-      console.log(sizes, sizes.length);
-   }, [])
 
    return (
       <section>
